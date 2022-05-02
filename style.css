@@ -1,0 +1,13 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+:root{
+    --bs-primary: #094FA4 !important;
+    --bs-blue: #094FA4 !important;
+    --bs-sencondary:089ba3 !important;
+}
+.bg-primary{
+    background: linear-gradient(180deg,#009ce5,var(--bs-primary)) !important;
+}
+.btn-primary{
+    background: var(--bs-primary) !important;
+}
