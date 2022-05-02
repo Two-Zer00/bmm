@@ -65,7 +65,7 @@
         </div>
     </nav>
     <main id="carouselExampleSlidesOnly" class="carousel slide bg-primary vh-100" style="padding-top: 66px;"
-        data-bs-ride="carousel">
+        data-bs-ride="carousel" data-bs-interval="6000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -77,8 +77,8 @@
         <div class="carousel-inner h-100">
             <div class="carousel-item h-100 active" id="home">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="row row-cols-xl-2 h-100 w-100">
-                        <div class="col-auto col-sm-5 text-light d-flex align-items-center">
+                    <div class="row h-100 w-100">
+                        <div class="col-lg col-md-5 text-light d-flex align-items-center">
                             <div class="w-75 mx-auto">
                                 <h1 class="fw-bold">Lorem ipsum dolor sit amet.</h1>
                                 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur
@@ -90,20 +90,21 @@
                                 <button class="btn btn-outline-light">Ver más</button>
                             </div>
                         </div>
-                        <div class="col-auto col-sm-7 text-center">
-                            <img src="resources/svg/undraw_invest_re_8jl5.svg" class="w-75 h-100" alt="">
+                        <div class="col-lg col-md-7 text-center">
+                            <img src="resources/svg/undraw_invest_re_8jl5.svg" class="w-75 h-100 user-select-none"
+                                alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carousel-item h-100" id="services">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="row row-cols-xl-2 h-100 w-100">
-                        <div class="col-auto col-sm-7 text-center">
-                            <!-- in a normal img add w-75 to the class -->
-                            <img src="resources/svg/undraw_logistics_x-4-dc.svg" class="w-75 h-100" alt="">
+                    <div class="row h-100 w-100">
+                        <div class="col-lg col-md-7 text-center">
+                            <img src="resources/svg/undraw_logistics_x-4-dc.svg" class="w-75 h-100 user-select-none"
+                                alt="">
                         </div>
-                        <div class="col-auto col-sm-5 text-light d-flex align-items-center">
+                        <div class="col-lg col-md-5 text-light d-flex align-items-center">
                             <div class="w-75 mx-auto">
                                 <h1 class="fw-bold">Lorem ipsum dolor sit amet.</h1>
                                 <p class="">
@@ -119,25 +120,26 @@
             </div>
             <div class="carousel-item h-100" id="success">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="row row-cols-xl-2 h-100 w-100">
-                        <div class="col-auto col-sm-7 text-center">
-                            <img src="resources/svg/undraw_happy_news_re_tsbd.svg" class="w-75 h-100" alt="">
-                        </div>
-                        <div class="col-auto col-sm-5 text-light d-flex align-items-center">
+                    <div class="row h-100 w-100">
+                        <div class="col-lg col-md-5 text-light d-flex align-items-center">
                             <div class="w-75 mx-auto">
                                 <h1 class="fw-bold">Lorem ipsum dolor sit amet.</h1>
-                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
-                                    recusandae.</p>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis
+                                    doloremque quia quos. Odit labore voluptates excepturi, iste praesentium tenetur
+                                    sint dolores voluptate nesciunt voluptatibus, minima esse eaque inventore omnis.</p>
                                 <button class="btn btn-outline-light">Ver más</button>
                             </div>
-
+                        </div>
+                        <div class="col-lg col-md-7 text-center">
+                            <img src="resources/svg/undraw_goals_re_lu76.svg" class="w-75 h-100 user-select-none"
+                                alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="fixed-bottom">
+    <footer class="fixed-bottom" style="left: unset;">
         <ul class="nav justify-content-end">
             <li class="nav-item">
                 <div class="dropdown dropup">
