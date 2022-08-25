@@ -16,6 +16,7 @@ filtered.forEach((key, index) => {
       document.querySelector(".dropdown-menu").children[1]
     );
 });
+
 var myCarousel = document.getElementById("carouselExampleSlidesOnly");
 myCarousel.addEventListener("slide.bs.carousel", (event) => {
   const children = Array.from(
