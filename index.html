@@ -65,8 +65,16 @@
                         </ul>
                     </div>
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a id="go-app" href="https://bmmapp.onrender.com/bmmapp/index.jsp"
-                                class="btn btn-primary disabled">Acceso</a></li>
+                        <li class="nav-item" id="access-element"
+                            title="Due to the app running on a free host service, it has to stop when it is not being used, so please be patient that the app has to start again.">
+                            <a id="go-app" href="https://bmmapp.onrender.com/bmmapp/index.jsp"
+                                class="btn btn-primary disabled d-flex align-items-center gap-2">
+                                Acceso
+                                <div class="spinner-border" role="status" id="access-loading">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -170,6 +178,8 @@
             mode: "no-cors"
         }).then(res => {
             document.querySelector('#go-app').classList.remove('disabled');
+            document.querySelector('#access-element').title = '';
+            document.querySelector('#access-loading').classList.add('d-none')
         })
         document.querySelector('#year').textContent = new Date().getFullYear()
     </script>
