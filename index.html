@@ -65,8 +65,8 @@
                         </ul>
                     </div>
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="https://bmm-web.herokuapp.com/index.jsp"
-                                class="btn btn-primary">Acceso</a></li>
+                        <li class="nav-item"><a id="go-app" href="https://bmmapp.onrender.com/bmmapp/index.jsp"
+                                class="btn btn-primary disabled">Acceso</a></li>
                     </ul>
                 </div>
             </div>
@@ -156,13 +156,23 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start text-center"
                         aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="https://twozer00.dev" rel="me">&copy; 2019-2022 Twozer00</a>
+                        <li><a class="dropdown-item" href="https://twozer00.dev" rel="me">&copy; 2019-<span
+                                    id="year"></span> Twozer00</a>
                         </li>
                     </ul>
                 </div>
             </li>
         </ul>
     </footer>
+    <script>
+        fetch('https://bmmapp.onrender.com/bmmapp/index.jsp', {
+            method: 'HEAD',
+            mode: "no-cors"
+        }).then(res => {
+            document.querySelector('#go-app').classList.remove('disabled');
+        })
+        document.querySelector('#year').textContent = new Date().getFullYear()
+    </script>
     <script src="js/script.js" type="module"></script>
 </body>
 
